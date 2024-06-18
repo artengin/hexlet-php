@@ -1,21 +1,36 @@
 {
     "name": "art/hexlet-php",
+    "description": "First test project hexlet",
+    "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Art\\HexletPhp\\": "src/"
         },
         "files": [
-            "src/Runner.php"
+            "src/Arabic.php",
+            "src/Roman.php",
+            "src/Engine.php",
+            "tests/ArabicTest.php",
+            "tests/RomanTest.php"
         ]
     },
+    "bin": [
+        "bin/convert-to-roman",
+        "bin/convert-to-arabic",
+        "bin/test-roman",
+        "bin/test-arabic"
+      ],
     "authors": [
         {
             "name": "artosepyan",
-            "email": "artyomosepyan@mail.ru"
+            "email": "art@osepyan.ru"
         }
     ],
     "require": {
-        "illuminate/collections": "^11.7"
+        "illuminate/collections": "^11.7",
+        "wp-cli/php-cli-tools": "^0.11.22",
+        "webmozart/assert": "^1.11"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.10"
