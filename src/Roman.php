@@ -14,7 +14,10 @@ function start()
 function toRoman($arab, $numerals)
 {
     $toInt = (int) $arab;
-    if ($toInt === 0 || strlen($toInt) !== strlen($arab)) {
+    if ($toInt === 0) {
+        return "Incorrect initial number";
+    }
+    if (strlen($toInt) !== strlen($arab)) {
         return "Incorrect initial number";
     }
     $result = "";
