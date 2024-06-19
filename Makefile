@@ -7,11 +7,8 @@ convert-to-arabic:
 convert-to-roman:
 	./bin/convert-to-roman
 
-test-arabic:
-	./bin/test-arabic
-
-test-roman:
-	./bin/test-roman
+test:
+	composer exec --verbose phpunit tests
 
 validate:
 	composer validate

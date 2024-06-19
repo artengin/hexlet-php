@@ -11,15 +11,12 @@
             "src/Arabic.php",
             "src/Roman.php",
             "src/Engine.php",
-            "tests/ArabicTest.php",
-            "tests/RomanTest.php"
+            "tests/UtilsTest.php"
         ]
     },
     "bin": [
         "bin/convert-to-roman",
-        "bin/convert-to-arabic",
-        "bin/test-roman",
-        "bin/test-arabic"
+        "bin/convert-to-arabic"
       ],
     "authors": [
         {
@@ -33,7 +30,8 @@
         "webmozart/assert": "^1.11"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^3.10"
+        "squizlabs/php_codesniffer": "^3.10",
+        "phpunit/phpunit": "^11.2"
     },
     "scripts": {
         "phpcs": "phpcs"
