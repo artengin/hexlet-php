@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/bead9b308ff22ba59cf9/maintainability)](https://codeclimate.com/github/artengin/roman-numerals-converter/maintainability)
+[![Actions Status](https://github.com/artprograms/roman-numerals-converter/actions/workflows/hello-world.yml/badge.svg)] [![Maintainability](https://api.codeclimate.com/v1/badges/bead9b308ff22ba59cf9/maintainability)](https://codeclimate.com/github/artengin/roman-numerals-converter/maintainability)
 
 ## Roman Numerals Converter 
 A simple Roman numeral converter running in a terminal.
