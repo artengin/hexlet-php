@@ -2,6 +2,8 @@
 
 namespace Converter\Roman;
 
+use const Converter\Engine\NUMERALS;
+
 use function Converter\Engine\startConvert;
 
 const DESCRIPTIONGAME = 'Converter Arabic number to Roman';
@@ -9,9 +11,9 @@ const NUMBERSTYLE = 'Arabic';
 
 function start()
 {
-    startConvert(DESCRIPTIONGAME, NUMBERSTYLE, fn ($first, $second) => toRoman($first, $second));
+    startConvert(DESCRIPTIONGAME, NUMBERSTYLE, fn ($first) => toRoman($first));
 }
-function toRoman($arab, $numerals)
+function toRoman($arab)
 {
     $toInt = (int) $arab;
     if ($toInt === 0) {
@@ -22,7 +24,7 @@ function toRoman($arab, $numerals)
     }
     $result = "";
     while ($arab > 0) {
-        foreach ($numerals as $key => $value) {
+        foreach (NUMERALS as $key => $value) {
             if ($arab >= $value) {
                 $arab -= $value;
                 $result .= $key;

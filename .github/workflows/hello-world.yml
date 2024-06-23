@@ -5,5 +5,4 @@ jobs:
         runs-on: ubuntu-latest 
         steps:
         - uses: actions/checkout@v3
-        - name: Project check
-          run: make say-hello
+        - run: make say-hello

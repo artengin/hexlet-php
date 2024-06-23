@@ -25,7 +25,7 @@ function startConvert(string $description, string $numberStyle, callable $conver
 {
     line($description);
     $num = prompt("Write the {$numberStyle} number");
-    $result = $convertValue($num, NUMERALS);
+    $result = $convertValue($num);
     line("{$result}");
     return;
 }
