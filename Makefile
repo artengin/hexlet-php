@@ -1,6 +1,9 @@
 install:
 	composer install
 
+update:
+	composer update
+
 convert-to-arabic:
 	./bin/convert-to-arabic
 	
