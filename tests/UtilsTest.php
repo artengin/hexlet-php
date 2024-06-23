@@ -4,8 +4,6 @@ namespace Converter\Phpunit\Tests;
 
 use PHPUnit\Framework\TestCase;
 
-use const Converter\Engine\NUMERALS;
-
 use function Converter\Roman\toRoman;
 use function Converter\Arabic\toArabic;
 

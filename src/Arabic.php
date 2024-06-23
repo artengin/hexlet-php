@@ -2,10 +2,10 @@
 
 namespace Converter\Arabic;
 
-use const Converter\Engine\NUMERALS;
-
 use function Converter\Engine\startConvert;
 use function Converter\Roman\toRoman;
+
+use const Converter\Engine\NUMERALS;
 
 const DESCRIPTIONGAME = 'Converter Roman number to Arabic';
 const NUMBERSTYLE = 'Roman';

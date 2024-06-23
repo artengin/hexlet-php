@@ -2,9 +2,9 @@
 
 namespace Converter\Roman;
 
-use const Converter\Engine\NUMERALS;
-
 use function Converter\Engine\startConvert;
+
+use const Converter\Engine\NUMERALS;
 
 const DESCRIPTIONGAME = 'Converter Arabic number to Roman';
 const NUMBERSTYLE = 'Arabic';
