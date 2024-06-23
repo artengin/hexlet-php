@@ -18,3 +18,6 @@ validate:
 
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin tests
+
+say-hello:
+	echo "Hello, World!"
